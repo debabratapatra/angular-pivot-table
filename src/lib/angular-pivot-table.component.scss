@@ -1,0 +1,38 @@
+.db-table-view {
+    line-height: 1.5em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    max-width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    border: solid 1px gray;
+    color: #4b4b4b;
+
+    tr {
+        &.selected {
+            background-color: #e2e7eb;
+        }
+
+        th {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25;
+            color: #181818;
+            border: 1px solid #cdd5dc;
+            vertical-align: middle;
+            position: relative;
+            box-sizing: border-box;
+            padding: 0.5rem 0.5rem;
+        }
+    
+        td {
+            border: 1px solid #cdd5dc;
+            vertical-align: middle;
+            position: relative;
+            padding: 0.5rem 0.5rem;
+            box-sizing: border-box;
+        }
+    }
+}

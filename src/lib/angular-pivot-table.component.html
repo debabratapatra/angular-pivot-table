@@ -1,0 +1,17 @@
+<table [attr.class]="'db-table-view' + configs.css.table_class">
+    <thead>
+        <tr>
+            <th *ngFor="let header of processed_headers">
+                {{header}}
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let row of processed_data">
+            <td *ngFor="let col of row">
+                {{col}}
+            </td>
+        </tr>
+    </tbody>
+</table>

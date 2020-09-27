@@ -1,5 +1,5 @@
 # Angular Pivot Table
-Angular Tree Grid is a simple pivot table built in Angular. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid" target="_blank">ngtreegrid</a> Package. If header needs to be fixed/freezed and body needs to be scrollable then check out this <a href="https://debabratapatra.github.io/pages/angular-fix-header-grid/demo" target="_blank">Fix Header Grid</a> Package.
+Angular Pivot Table is a simple pivot table built in Angular. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid" target="_blank">ngtreegrid</a> Package. If header needs to be fixed/freezed and body needs to be scrollable then check out this <a href="https://debabratapatra.github.io/pages/angular-fix-header-grid/demo" target="_blank">Fix Header Grid</a> Package.
 
 ## Demo
 

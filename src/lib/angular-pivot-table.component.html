@@ -1,8 +1,21 @@
 <table [attr.class]="'db-table-view' + configs.css.table_class">
     <thead>
         <tr>
+            <th class="header-corner">
+                <table class="header-corner">
+                    <tr>
+                        <td class="corner-top">{{configs.columns}}</td>
+                    </tr>
+                    <tr>
+                        <td class="corner-bottom">{{configs.rows}}</td>
+                    </tr>
+                </table>
+            </th>
             <th *ngFor="let header of processed_headers">
                 {{header}}
+            </th>
+            <th>
+                Total
             </th>
         </tr>
     </thead>

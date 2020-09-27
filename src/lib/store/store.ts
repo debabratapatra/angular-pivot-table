@@ -35,11 +35,12 @@ export class Store {
         const rows = this.findUnique(this.pluck(source, configs.rows));
         const columns = this.findUnique(this.pluck(source, configs.columns));
 
-        this.processed_headers = ['', ...columns];
+        this.processed_headers = [...columns];
 
         for (let i = 0; i < rows.length; i++) {
             const row = rows[i];
             const processed_row = [row];
+            let row_count = 0;
             for (let j = 0; j < columns.length; j++) {
                 const column = columns[j];
                 let count = 0;
@@ -52,10 +53,17 @@ export class Store {
                     }
                 }
                 processed_row.push(count);
+                row_count += count;
             }
-
+            processed_row.push(row_count);
             this.processed_data.push(processed_row);
         }
+
+        const summary_row = ['Total'];
+        summary_row.push(this.processed_data.map(data => data[1]).reduce((a, b) => a + b, 0));
+        summary_row.push(this.processed_data.map(data => data[2]).reduce((a, b) => a + b, 0));
+        summary_row.push(this.processed_data.map(data => data[3]).reduce((a, b) => a + b, 0));
+        this.processed_data.push(summary_row);
     }
 
     findUnique(a) {

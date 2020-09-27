@@ -10,6 +10,28 @@
     border: solid 1px gray;
     color: #4b4b4b;
 
+    table.header-corner {
+        width: 100%;
+        border-collapse: collapse;
+        td {
+            font-weight: normal;
+            &.corner-top {
+                border-width: 0 0 1px 0;
+            }
+            &.corner-bottom {
+                border-width: 0;
+            }
+        }
+    }
+
+    tbody tr {
+        td {
+            &:nth-child(1) {
+                font-weight: 600;
+            } 
+        }
+    }
+
     tr {
         &.selected {
             background-color: #e2e7eb;
@@ -25,6 +47,10 @@
             position: relative;
             box-sizing: border-box;
             padding: 0.5rem 0.5rem;
+
+            &.header-corner {
+                padding: 0;
+            }
         }
     
         td {

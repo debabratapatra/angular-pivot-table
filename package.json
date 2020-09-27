@@ -1,11 +1,27 @@
 {
   "name": "angular-pivot-table",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "homepage": "https://debabratapatra.github.io/pages/angular-pivot-table/demo",
+  "license" : "MIT",
+  "author": {
+    "name" : "Debabrata Patra",
+    "email" : "debabratapatra12@gmail.com",
+    "url" : "https://debabratapatra.github.io/"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/debabratapatra/angular-pivot-table.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/debabratapatra/angular-pivot-table/issues",
+    "email" : "debabratapatra12@gmail.com"
+  },
+  "keywords": ["Angular", "Pivot Table", "Angular Pivot Table", "Angular 4", "Angular 5", "Angular 6", "Angular 10"]
 }

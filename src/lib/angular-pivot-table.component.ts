@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Configs } from 'projects/angular-pivot-table/src/lib/models/Configs.model';
-import { Store } from 'projects/angular-pivot-table/src/lib/store/store';
+import { Configs } from './models/Configs.model';
+import { Store } from './store/store';
 
 @Component({
   selector: 'db-angular-pivot-table',

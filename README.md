@@ -21,7 +21,7 @@ Please consider a <a href="https://debabratapatra.github.io/donate.html" target=
 ## Usage
 
 ### Import
-Import NgtreegridModule Module in your application module.
+Import AngularPivotTableModule Module in your application module.
 
 ```javascript
   import {AngularPivotTableModule} from 'angular-pivot-table';

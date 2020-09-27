@@ -60,10 +60,14 @@ export class Store {
         }
 
         const summary_row = ['Total'];
-        summary_row.push(this.processed_data.map(data => data[1]).reduce((a, b) => a + b, 0));
-        summary_row.push(this.processed_data.map(data => data[2]).reduce((a, b) => a + b, 0));
-        summary_row.push(this.processed_data.map(data => data[3]).reduce((a, b) => a + b, 0));
+        for (let index = 1; index < this.processed_data[0].length; index++) {
+            this.addSummaryColumn(summary_row, index);            
+        }
         this.processed_data.push(summary_row);
+    }
+
+    addSummaryColumn(summary_row, index) {
+        summary_row.push(this.processed_data.map(data => data[index]).reduce((a, b) => a + b, 0));
     }
 
     findUnique(a) {

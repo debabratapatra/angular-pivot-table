@@ -1,24 +1,88 @@
-# AngularPivotTable
+# Angular Pivot Table
+Angular Tree Grid is a simple pivot table built in Angular. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid" target="_blank">ngtreegrid</a> Package. If header needs to be fixed/freezed and body needs to be scrollable then check out this <a href="https://debabratapatra.github.io/pages/angular-fix-header-grid/demo" target="_blank">Fix Header Grid</a> Package.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.14.
+## Demo
 
-## Code scaffolding
+Click <a href="https://debabratapatra.github.io/pages/angular-pivot-table/demo" target="_blank">here</a> for demo. This readme is the documentation. Visit my <a href="https://debabratapatra.github.io" target="_blank">Website</a> to know other packages. 
+<div>
+<img src="https://debabratapatra.github.io/resources/images/cards/angular-pivot-table.png" alt="Loading" />
+</div>
 
-Run `ng generate component component-name --project angular-pivot-table` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-pivot-table`.
-> Note: Don't forget to add `--project angular-pivot-table` or else it will be added to the default project in your `angular.json` file. 
+## Donate :hearts:
 
-## Build
+Please consider a <a href="https://debabratapatra.github.io/donate.html" target="_blank">donation</a> if it is useful to you.
 
-Run `ng build angular-pivot-table` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Publishing
+```bash
+    npm i angular-pivot-table
+```
 
-After building your library with `ng build angular-pivot-table`, go to the dist folder `cd dist/angular-pivot-table` and run `npm publish`.
+## Usage
 
-## Running unit tests
+### Import
+Import NgtreegridModule Module in your application module.
 
-Run `ng test angular-pivot-table` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```javascript
+  import {AngularPivotTableModule} from 'angular-pivot-table';
+```
 
-## Further help
+Add it to your imports array.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```javascript
+    @NgModule({
+      imports: [
+        AngularPivotTableModule
+      ]
+    })
+```
+
+### Data
+Data should look like below. 
+
+```
+  source= [
+    {'author': 'Deba', 'book': 'Angular'},
+    {'author': 'Deba', 'book': 'Physics'},
+    {'author': 'Aditya', 'book': 'Angular'}
+  ];
+```
+
+### Configs
+Below are configs that can be set
+
+#### Table Configurations
+| Field  |Type   |Default |  Description |
+|---|---|---|---|
+|  rows |  string | n/a  |  Mandatory field. It is name of the column that will be treated as rows |
+|  columns |  string | n/a  |  Mandatory field. It is name of the column that will be treated as columns |
+|  data_loading_text |  string | 'Loading...'  |  Loading place holder. This will be displayed when data is empty. |
+|  row_class_function |  Function | n/a  |  Callback function for row class. A custom class can be returned which will be added to the row. |
+| css  | Object  |  n/a | Css class for icons. See Below  |
+
+##### css
+| Field  |Type   |Default |  Description |
+|---|---|---|---|
+| row_selection_class  | string  |  n/a | CSS Class for selected row.  |
+| header_class  | string  |  n/a | CSS Class for header.  |
+| table_class  | string  |  n/a | CSS Class for Table.  |
+
+#### Example
+```
+  configs: any = {
+    'rows': 'author',
+    'columns': 'book'
+  };
+```
+
+### HTML
+Add below node to your html.
+```
+  <db-angular-pivot-table [source]="source" [configs]='configs'></db-angular-pivot-table>
+```
+
+### Can I hire you guys?
+Yes. Please contact us at <a href="mailto:debabratapatra12@gmail.com">debabratapatra12@gmail.com</a> for any professional support. We will be happy to work with you!
+
+## License
+This project is licensed under the MIT license.

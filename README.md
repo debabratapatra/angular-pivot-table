@@ -1,16 +1,16 @@
 # Angular Pivot Table
-Angular Pivot Table is a simple pivot table built in Angular. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid" target="_blank">ngtreegrid</a> Package. If header needs to be fixed/freezed and body needs to be scrollable then check out this <a href="https://debabratapatra.github.io/pages/angular-fix-header-grid/demo" target="_blank">Fix Header Grid</a> Package.
+Angular Pivot Table is a simple pivot table built in Angular. If data needs to be grouped by fields then check out this <a href="https://github.com/debabratapatra/ngtreegrid" target="_blank">ngtreegrid</a> Package. If header needs to be fixed/freezed and body needs to be scrollable then check out this <a href="https://curiouslinks.com/pages/angular-fix-header-grid/demo" target="_blank">Fix Header Grid</a> Package.
 
 ## Demo
 
-Click <a href="https://debabratapatra.github.io/pages/angular-pivot-table/demo" target="_blank">here</a> for demo. This readme is the documentation. Visit my <a href="https://debabratapatra.github.io" target="_blank">Website</a> to know other packages. 
+Click <a href="https://curiouslinks.com/pages/angular-pivot-table/demo" target="_blank">here</a> for demo. This readme is the documentation. Visit my <a href="https://curiouslinks.com" target="_blank">Website</a> to know other packages. 
 <div>
-<img src="https://debabratapatra.github.io/resources/images/cards/angular-pivot-table.png" alt="Loading" />
+<img src="https://curiouslinks.com/resources/images/cards/angular-pivot-table.png" alt="Loading" />
 </div>
 
 ## Donate :hearts:
 
-Please consider a <a href="https://debabratapatra.github.io/donate.html" target="_blank">donation</a> if it is useful to you.
+Please consider a <a href="https://curiouslinks.com/donate.html" target="_blank">donation</a> if it is useful to you.
 
 ## Installation
 

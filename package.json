@@ -1,6 +1,6 @@
 {
   "name": "angular-pivot-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"
@@ -8,12 +8,12 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "homepage": "https://debabratapatra.github.io/pages/angular-pivot-table/demo",
+  "homepage": "https://curiouslinks.com//pages/angular-pivot-table/demo",
   "license" : "MIT",
   "author": {
     "name" : "Debabrata Patra",
     "email" : "debabratapatra12@gmail.com",
-    "url" : "https://debabratapatra.github.io/"
+    "url" : "https://curiouslinks.com//"
   },
   "repository": {
     "type" : "git",

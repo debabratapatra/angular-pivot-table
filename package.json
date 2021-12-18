@@ -1,6 +1,6 @@
 {
   "name": "angular-pivot-table",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14"

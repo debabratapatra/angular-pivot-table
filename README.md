@@ -12,6 +12,14 @@ Click <a href="https://curiouslinks.com/pages/angular-pivot-table/demo" target="
 
 Please consider a <a href="https://curiouslinks.com/donate.html" target="_blank">donation</a> if it is useful to you.
 
+## Version
+Choose the correct version for your application.
+
+| Angular  |angular-pivot-table |
+|---|---|
+| <= 8  | 1.0.0  |
+| >= 9  | 1.0.3  |
+
 ## Installation
 
 ```bash
